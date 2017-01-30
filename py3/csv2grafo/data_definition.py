@@ -136,7 +136,7 @@ DATA_COLUMNS = [
         },
         'value': {
             'prefix': 'dbpedia',
-            'value_prefix': 'Earthquake'
+            'value_prefix': ''
         }
     },
     {
