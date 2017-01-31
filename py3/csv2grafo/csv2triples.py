@@ -43,6 +43,8 @@ if __name__ == '__main__':
                 value = ""
                 if DATA_COLUMNS[i]['type'] == DATA_VALUE:
                     value = '"%s"' % (columnas_entrantes[i])
+                    if value == '""':
+                        continue
                 elif DATA_COLUMNS[i]['type'] == DATA_RESOURCE:
                     value = "<%s%s%s>" % (PREFIXES[DATA_COLUMNS[i]['value']['prefix']],
                                           DATA_COLUMNS[i]['value']['value_prefix'], columnas_entrantes[i].capitalize()
